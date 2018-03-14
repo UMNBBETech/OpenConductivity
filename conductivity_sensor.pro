@@ -1,6 +1,10 @@
-update=2/17/2018 8:29:09 PM
+update=22/05/2015 07:44:53
 version=1
 last_client=kicad
+[general]
+version=1
+RootSch=
+BoardNm=
 [pcbnew]
 version=1
 LastNetListRead=
@@ -23,17 +27,7 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
-LibDir=C:/Users/daniel/Desktop/kicad-repo/BBEIRG_kicad_parts
+LibDir=
 [eeschema/libraries]
-LibName1=quarantine/schematic_symbols/connectors
-LibName2=quarantine/schematic_symbols/ic
-LibName3=quarantine/schematic_symbols/passives
-LibName4=quarantine/schematic_symbols/misc
-LibName5=quarantine/schematic_symbols/modules
-LibName6=quarantine/schematic_symbols/power
-LibName7=quarantine/schematic_symbols/sensors
-LibName8=quarantine/schematic_symbols/transistors

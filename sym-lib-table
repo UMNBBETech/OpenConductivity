@@ -1,0 +1,10 @@
+(sym_lib_table
+  (lib (name connectors)(type Legacy)(uri C:/Users/daniel/Desktop/kicad-repo/BBEIRG_kicad_parts/quarantine/schematic_symbols/connectors.lib)(options "")(descr ""))
+  (lib (name ic)(type Legacy)(uri C:/Users/daniel/Desktop/kicad-repo/BBEIRG_kicad_parts/quarantine/schematic_symbols/ic.lib)(options "")(descr ""))
+  (lib (name passives)(type Legacy)(uri C:/Users/daniel/Desktop/kicad-repo/BBEIRG_kicad_parts/quarantine/schematic_symbols/passives.lib)(options "")(descr ""))
+  (lib (name misc)(type Legacy)(uri C:/Users/daniel/Desktop/kicad-repo/BBEIRG_kicad_parts/quarantine/schematic_symbols/misc.lib)(options "")(descr ""))
+  (lib (name modules)(type Legacy)(uri C:/Users/daniel/Desktop/kicad-repo/BBEIRG_kicad_parts/quarantine/schematic_symbols/modules.lib)(options "")(descr ""))
+  (lib (name power1)(type Legacy)(uri C:/Users/daniel/Desktop/kicad-repo/BBEIRG_kicad_parts/quarantine/schematic_symbols/power.lib)(options "")(descr ""))
+  (lib (name sensors1)(type Legacy)(uri C:/Users/daniel/Desktop/kicad-repo/BBEIRG_kicad_parts/quarantine/schematic_symbols/sensors.lib)(options "")(descr ""))
+  (lib (name transistors1)(type Legacy)(uri C:/Users/daniel/Desktop/kicad-repo/BBEIRG_kicad_parts/quarantine/schematic_symbols/transistors.lib)(options "")(descr ""))
+)
