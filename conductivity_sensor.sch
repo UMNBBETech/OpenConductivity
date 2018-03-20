@@ -432,7 +432,7 @@ U 1 1 5AA64222
 P 4500 2500
 F 0 "MK_COM1" H 4500 2700 50  0000 C CNN
 F 1 "Mounting_Hole_PAD" H 4500 2675 50  0001 C CNN
-F 2 "mechanical:MountingHole_3mm_Pad" H 4500 2500 50  0001 C CNN
+F 2 "connectors:4-40 screw terminal keystone 7774" H 4500 2500 50  0001 C CNN
 F 3 "" H 4500 2500 50  0001 C CNN
 	1    4500 2500
 	-1   0    0    1   
@@ -443,7 +443,7 @@ U 1 1 5AA64426
 P 4850 2550
 F 0 "MK_1" H 4850 2750 50  0000 C CNN
 F 1 "Mounting_Hole_PAD" H 4850 2725 50  0001 C CNN
-F 2 "mechanical:MountingHole_3mm_Pad" H 4850 2550 50  0001 C CNN
+F 2 "connectors:4-40 screw terminal keystone 7774" H 4850 2550 50  0001 C CNN
 F 3 "" H 4850 2550 50  0001 C CNN
 	1    4850 2550
 	1    0    0    -1  
@@ -454,7 +454,7 @@ U 1 1 5AA644A2
 P 4850 2850
 F 0 "MK_2" H 4850 3050 50  0000 C CNN
 F 1 "Mounting_Hole_PAD" H 4850 3025 50  0001 C CNN
-F 2 "mechanical:MountingHole_3mm_Pad" H 4850 2850 50  0001 C CNN
+F 2 "connectors:4-40 screw terminal keystone 7774" H 4850 2850 50  0001 C CNN
 F 3 "" H 4850 2850 50  0001 C CNN
 	1    4850 2850
 	-1   0    0    1   
@@ -697,7 +697,6 @@ Text Label 7350 4600 0    60   ~ 0
 PEAK
 Wire Wire Line
 	7350 4600 7250 4600
-NoConn ~ 7250 4700
 NoConn ~ 7250 4800
 NoConn ~ 7250 4900
 NoConn ~ 7250 5000
@@ -1058,12 +1057,12 @@ Daniel Furuta\nUMN BBE IRG
 $Comp
 L misc:Logo_Open_Hardware_Small #LOGO1
 U 1 1 5AA6A7C1
-P 8650 4700
-F 0 "#LOGO1" H 8650 4975 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 8650 4475 50  0001 C CNN
-F 2 "" H 8650 4700 50  0001 C CNN
-F 3 "" H 8650 4700 50  0001 C CNN
-	1    8650 4700
+P 8300 5700
+F 0 "#LOGO1" H 8300 5975 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 8300 5475 50  0001 C CNN
+F 2 "" H 8300 5700 50  0001 C CNN
+F 3 "" H 8300 5700 50  0001 C CNN
+	1    8300 5700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1148,4 +1147,80 @@ Wire Wire Line
 	4250 4800 4550 4800
 Wire Wire Line
 	4250 5100 4550 5100
+$Comp
+L sensors:MCP9700A U4
+U 1 1 5AB1D40E
+P 8150 4750
+F 0 "U4" H 8377 4796 50  0000 L CNN
+F 1 "MCP9700A" H 8377 4705 50  0000 L CNN
+F 2 "actives:TO-92" H 8000 5000 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31820.pdf" H 8000 5000 50  0001 C CNN
+	1    8150 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4750 7600 4750
+Wire Wire Line
+	7600 4750 7600 4700
+Wire Wire Line
+	7600 4700 7250 4700
+$Comp
+L power:GND #PWR0101
+U 1 1 5AB254B3
+P 7800 4950
+F 0 "#PWR0101" H 7800 4700 50  0001 C CNN
+F 1 "GND" H 7805 4777 50  0000 C CNN
+F 2 "" H 7800 4950 50  0001 C CNN
+F 3 "" H 7800 4950 50  0001 C CNN
+	1    7800 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4850 7800 4850
+Wire Wire Line
+	7800 4850 7800 4950
+$Comp
+L power:VCC #PWR0102
+U 1 1 5AB2D575
+P 7800 4350
+F 0 "#PWR0102" H 7800 4200 50  0001 C CNN
+F 1 "VCC" H 7817 4523 50  0000 C CNN
+F 2 "" H 7800 4350 50  0001 C CNN
+F 3 "" H 7800 4350 50  0001 C CNN
+	1    7800 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L passives:C_X7R C10
+U 1 1 5AB2D68C
+P 8050 4400
+F 0 "C10" V 7821 4400 50  0000 C CNN
+F 1 "C_X7R" V 7912 4400 50  0000 C CNN
+F 2 "passives:C_TH_CERAMIC_RADIAL_100mil" H 8050 4400 50  0001 C CNN
+F 3 "" H 8050 4400 50  0001 C CNN
+	1    8050 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 4400 7800 4400
+Wire Wire Line
+	7800 4400 7800 4350
+$Comp
+L power:GND #PWR0103
+U 1 1 5AB3DC2E
+P 8300 4400
+F 0 "#PWR0103" H 8300 4150 50  0001 C CNN
+F 1 "GND" V 8305 4272 50  0000 R CNN
+F 2 "" H 8300 4400 50  0001 C CNN
+F 3 "" H 8300 4400 50  0001 C CNN
+	1    8300 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 4400 8150 4400
+Wire Wire Line
+	7800 4400 7800 4650
+Wire Wire Line
+	7800 4650 7850 4650
+Connection ~ 7800 4400
 $EndSCHEMATC
